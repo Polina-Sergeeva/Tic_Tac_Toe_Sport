@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/style_background"
+        tools:context="sergeeva.tic_tac_toe.SettingsActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="64dp"
+            android:alpha="0.3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_main" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_bold1"
+            android:shadowColor="@color/blue"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="Settings"
+            android:textColor="@color/blue_1"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_medium"
+            android:shadowColor="@color/blue"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="Difficulty"
+            android:textColor="@color/blue_1"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/roboto_medium"
+            android:shadowColor="@color/blue"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="Game Rules"
+            android:textColor="@color/blue_1"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prev_lvl" />
+
+        <TextView
+            android:id="@+id/infoLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/roboto_medium"
+            android:shadowColor="@color/blue"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="Easy"
+            android:textColor="@color/blue_1"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/prev_lvl"
+            app:layout_constraintEnd_toStartOf="@+id/next_lvl"
+            app:layout_constraintStart_toEndOf="@+id/prev_lvl"
+            app:layout_constraintTop_toTopOf="@+id/prev_lvl" />
+
+        <ImageView
+            android:id="@+id/prev_lvl"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:srcCompat="@drawable/previous" />
+
+        <ImageView
+            android:id="@+id/next_lvl"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:srcCompat="@drawable/next" />
+
+        <CheckBox
+            android:id="@+id/checkBox_vertical"
+            android:layout_width="347dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="24dp"
+            android:checked="false"
+            android:fontFamily="@font/roboto_medium"
+            android:minHeight="48dp"
+            android:paddingLeft="8dp"
+            android:shadowColor="@color/blue"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="@string/horizontal_row"
+            android:textColor="@color/blue_1"
+            android:textSize="24sp"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <CheckBox
+            android:id="@+id/checkBox_horizontal"
+            android:layout_width="347dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/roboto_medium"
+            android:minHeight="48dp"
+            android:paddingLeft="8dp"
+            android:shadowColor="@color/blue"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="Vertical Row"
+            android:textColor="@color/blue_1"
+            android:textSize="24sp"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox_diagonal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_vertical" />
+
+        <CheckBox
+            android:id="@+id/checkBox_diagonal"
+            android:layout_width="347dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="87dp"
+            android:fontFamily="@font/roboto_medium"
+            android:minHeight="48dp"
+            android:paddingLeft="8dp"
+            android:shadowColor="@color/blue"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="Diagonal Row"
+            android:textColor="@color/blue_1"
+            android:textSize="24sp"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintBottom_toTopOf="@+id/toBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_horizontal"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/toBack"
+            style="@style/style_button"
+            android:layout_width="254dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="32dp"
+            android:text="Back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_diagonal" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

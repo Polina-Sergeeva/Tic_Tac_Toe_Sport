@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "337264340810",
+    "project_id": "posoli",
+    "storage_bucket": "posoli.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337264340810:android:dcaf527c064e0e7b675bb3",
+        "android_client_info": {
+          "package_name": "olimpbet.sopils.olimp.bk.bet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337264340810-m54kbhqa9qt1sc0lknn5c1c5gl6grt9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCPPxh10lH4IpDO5CGD9T4gNm2QCN36Js"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337264340810-m54kbhqa9qt1sc0lknn5c1c5gl6grt9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

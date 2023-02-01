@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Tic Tac Toe Sport</string>
+    <string name="start">START</string>
+    <string name="settings">SETTINGS</string>
+    <string name="horizontal_row">Horizontal Row</string>
+    <string name="menu">Menu</string>
+    <string name="continue_game">Continue Game</string>
+    <string name="settings_m">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="ok">OK</string>
+
+    <string name="preference_file_key">testtic_tac_toe.file_key</string>
+    <string-array name="game_lvl">
+        <item>EASY</item>
+        <item>NORMAL</item>
+        <item>HARD</item>
+    </string-array>
+    <string name="dialog_status_win">YOU WIN!!!</string>
+    <string name="dialog_status_lose">YOU LOSE!</string>
+    <string name="dialog_status_draw">YOU TIED!</string>
+
+</resources>
